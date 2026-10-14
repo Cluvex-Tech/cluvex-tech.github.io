@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cluvex-tech.github.io/sitemap.xml
