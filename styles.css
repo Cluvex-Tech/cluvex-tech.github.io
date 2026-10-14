@@ -20,3 +20,136 @@ dialog{padding:0;border:1px solid #394359;background:var(--panel);color:var(--te
 @media(max-width:540px){.services-grid{grid-template-columns:1fr;margin-top:32px}.service-item{padding:25px}.service-item p{min-height:0;font-size:12px;margin-bottom:18px}.service-item h3{font-size:18px}.service-top{margin-bottom:22px}.service-tag{font-size:9px}.studio-focus{grid-template-columns:1fr}.process-heading{margin-top:40px}.process-heading h3{font-size:20px}.studio-focus .focus-icon{font-size:13px;top:4px}.hero-art{contain:none}}
 
 @media(min-width:541px) and (max-width:800px){.nav-wrap{height:auto;min-height:76px;flex-wrap:wrap;gap:16px;padding-block:14px}nav{width:100%;gap:20px;flex-wrap:wrap;justify-content:space-between}.nav-contact{padding:7px 12px;gap:12px}.js-enabled .nav-wrap{height:76px;padding-block:0}.js-enabled .menu-toggle{display:block}.js-enabled nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:center;background:#10141f;border-bottom:1px solid #30394f;padding:25px 20px;gap:23px}.js-enabled nav.open{display:flex}}
+
+/* Readable typography across desktop, tablet, and mobile. */
+:root { --muted: #b1b7c4; }
+body { font-size: 17px; }
+nav { font-size: 16px; gap: 30px; }
+.eyebrow { font-size: 13px; letter-spacing: 1.7px; }
+h1 { font-size: clamp(58px, 5.3vw, 76px); letter-spacing: -3px; }
+h2 { font-size: 52px; }
+h3 { font-size: 23px; }
+.hero-description { font-size: 18px; line-height: 1.75; max-width: 470px; }
+.button { font-size: 15px; padding: 16px 23px; gap: 22px; }
+.text-link { font-size: 15px; gap: 12px; }
+.hero-note { font-size: 14px; color: #a5adbd; }
+.hero-note strong { color: #c0c7d5; }
+.floating-label { font-size: 12px; }
+.art-coordinate { font-size: 10px; }
+.scroll-link { font-size: 13px; color: #b1b7c4; }
+.principles-strip .container { font-size: 16px; }
+.section-heading > p { font-size: 16px; line-height: 1.7; max-width: 430px; }
+.service-item { display: flex; flex-direction: column; padding: 32px; }
+.service-item h3 { font-size: 22px; line-height: 1.4; }
+.service-item p { font-size: 16px; line-height: 1.75; min-height: 0; }
+.service-tag { font-size: 12px; line-height: 1.6; margin-top: auto; }
+.service-top > span:last-child { font-size: 13px; }
+.services-bottom p { font-size: 15px; }
+.filters { gap: 8px; }
+.filters button { font-size: 14px; padding: 10px 14px; }
+.filters button span { font-size: 12px; }
+.store-link { font-size: 14px; }
+.visual-caption { font-size: 27px; }
+.visual-number { font-size: 13px; }
+.visual-tag { font-size: 11px; }
+.project-title-row h3 { font-size: 24px; }
+.project-type { font-size: 14px; }
+.details-button { width: 44px; height: 44px; font-size: 23px; }
+.project-description { font-size: 16px; line-height: 1.75; min-height: 84px; }
+.project-links { font-size: 14px; flex-wrap: wrap; row-gap: 12px; }
+.project-links > span { color: #a5adbd; }
+.studio-lead { font-size: 20px; line-height: 1.7; max-width: 560px; }
+.studio-description { font-size: 16px; line-height: 1.8; max-width: 560px; }
+.studio-mark > span { font-size: 11px; }
+.process-heading h3 { font-size: 27px; }
+.studio-focus h3 { font-size: 20px; }
+.studio-focus p { font-size: 16px; line-height: 1.75; }
+.focus-icon { font-size: 17px; }
+.contact-main p { font-size: 17px; line-height: 1.75; }
+.contact-email { font-size: 24px; }
+.copy-email, #copy-status { font-size: 14px; }
+.contact-orbit > span:last-child { font-size: 11px; letter-spacing: .7px; }
+.footer-top > p, .footer-links { font-size: 14px; color: #b1b7c4; }
+.footer-bottom { font-size: 13px; color: #a5adbd; }
+.dialog-heading .eyebrow { font-size: 12px; }
+.dialog-heading h2 { font-size: 30px; }
+#dialog-description { font-size: 17px; }
+#dialog-features { font-size: 16px; line-height: 1.8; }
+.dialog-actions .button { font-size: 14px; }
+.dialog-close { min-width: 44px; min-height: 44px; }
+
+@media (max-width: 1100px) {
+  .hero h1 { font-size: 59px; letter-spacing: -2.8px; }
+  .hero-actions { flex-wrap: wrap; gap: 20px; }
+  .hero-description { max-width: 420px; }
+  .section-heading h2, .studio-intro h2 { font-size: 46px; }
+  .work-toolbar { flex-wrap: wrap; }
+  .studio-focus { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .visual-caption { font-size: 24px; }
+}
+@media (max-width: 800px) {
+  .hero h1 { font-size: 66px; }
+  .hero-description { max-width: 500px; }
+  .hero-actions { flex-wrap: nowrap; }
+  .section-heading > p { font-size: 16px; }
+  .project-description { min-height: 0; }
+  .project-info { padding: 23px; }
+  .project-title-row { flex-wrap: wrap; }
+  .project-title-row h3 { font-size: 22px; }
+  .project-type { font-size: 13px; }
+  .visual-caption { font-size: 23px; }
+  .principles-strip .container { font-size: 14px; }
+  .contact-main h2 { font-size: 43px; }
+  .footer-top { flex-wrap: wrap; }
+  .footer-bottom { font-size: 12px; }
+}
+@media (max-width: 540px) {
+  .hero h1 { font-size: 48px; letter-spacing: -2px; }
+  .hero-description { font-size: 17px; max-width: 100%; }
+  .hero-actions { flex-wrap: wrap; gap: 20px; }
+  .hero-actions .text-link { font-size: 15px; }
+  .eyebrow { font-size: 12px; letter-spacing: 1.25px; }
+  .button { font-size: 15px; padding: 14px 18px; gap: 18px; }
+  .hero-note { font-size: 13px; }
+  .floating-label { font-size: 10px; }
+  .art-coordinate { font-size: 8px; }
+  .scroll-link { font-size: 12px; }
+  .principles-strip .container { font-size: 13px; }
+  .section-heading h2, .studio-intro h2 { font-size: 40px; }
+  .service-item { padding: 27px; }
+  .service-item h3 { font-size: 22px; }
+  .service-item p { font-size: 16px; }
+  .service-tag { font-size: 12px; }
+  .services-bottom p { font-size: 15px; }
+  .filters button { font-size: 14px; padding: 9px 11px; }
+  .store-link { font-size: 14px; }
+  .visual-caption { font-size: 23px; }
+  .project-title-row { flex-wrap: nowrap; }
+  .project-title-row h3 { font-size: 23px; }
+  .project-description { font-size: 16px; }
+  .project-links { font-size: 13px; }
+  .studio-lead { font-size: 19px; }
+  .studio-description { font-size: 16px; }
+  .studio-mark > span { font-size: 9px; }
+  .studio-focus { grid-template-columns: 1fr; }
+  .studio-focus .focus-icon { font-size: 16px; }
+  .studio-focus h3 { font-size: 20px; }
+  .studio-focus p { font-size: 16px; }
+  .contact-main h2 { font-size: 37px; }
+  .contact-main p { font-size: 16px; }
+  .contact-email { font-size: 21px; gap: 18px; }
+  .contact-actions { align-items: flex-start; flex-wrap: wrap; }
+  .footer-top > .brand { font-size: 21px; }
+  .footer-links { font-size: 14px; flex-wrap: wrap; }
+  .footer-top > p { font-size: 14px; }
+  .footer-bottom { font-size: 12px; }
+  .dialog-heading h2 { font-size: 25px; }
+}
+@media (max-width: 360px) {
+  .hero h1 { font-size: 41px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .project-title-row h3 { font-size: 20px; }
+  .project-title-row { gap: 9px; }
+  .contact-main h2 { font-size: 33px; }
+  .contact-email { font-size: 18px; }
+}
